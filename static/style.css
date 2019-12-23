@@ -1,24 +1,53 @@
+/*
+author: Connor Hunter   <clh7090@rit.edu>
+
+Flask Personal Website
+ */
+
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif ;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
 
+
 .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+header {
     background: #55d6aa;
 }
 
-header {
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+
+.container > .left-side{
+    color: black;
+    animation-name: color-fade;
+    animation-duration: 5s;
+
+}
+
+
+header > .container{
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
 }
 
+
+.container > nav{
+    justify-content: space-between;
+    display: flex;
+}
+
+
 nav > .right-side {
     display: flex;
 }
+
 
 .link-wrapper {
     margin-left: 100px;
@@ -27,6 +56,7 @@ nav > .right-side {
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
+
 
 .right-side a{
     color: black;
@@ -42,4 +72,17 @@ nav > .right-side {
 
 .right-side a:hover {
     color: #f1f1f1;
+}
+
+
+@keyframes color-fade {
+    0%{color: rgba(191, 56, 144, 0)}
+
+    25%{color: rgb(255, 112, 0)
+    }
+    50%{color: rgb(223, 0, 215)
+    }
+    75%{color: rgb(144, 26, 38)
+    }
+    100%{color: rgb(0, 0, 0)}
 }
