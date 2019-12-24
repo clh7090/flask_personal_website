@@ -4,5 +4,49 @@
 
 
 {% extends "template.html" %}
+
+
 {% block title %}Home Page{% endblock title %}
+
+
 {% block user %}Welcome User{% endblock user %}
+
+{% block main %}
+<div class="container">
+    <div class="main-left-side">
+    <img src="/static/Connor.png" alt="Image of Connor." class="circle">
+    </div>
+    <div class="main-right-side">
+        <div class="body-text">
+            <h3>&lt;h1&gt; PROGRAMMER | Python | HTML | CSS | Java &lt;/h1&gt;</h3>
+        </div>
+        <div class="body-text">
+            &lt;ul&gt;
+        </div>
+        <div class="body-text">
+            &emsp;&emsp;&lt;li&gt;
+            <br>
+            <br>&emsp;&emsp;&emsp;&emsp; Leader in the class room and on the keyboard. <br>
+            <br>
+        </div>
+        <div class="body-text">
+            &emsp;&emsp;&lt;/li&gt;
+            <br>
+            <br>&emsp;&emsp;&emsp;&emsp; Problem solving skills with knowledge in computer science theory. <br>
+            <br>
+        </div>
+        <div class="body-text">
+            &emsp;&emsp;&lt;li&gt;
+            <br>
+            <br>&emsp;&emsp;&emsp;&emsp;Time-efficient and space-efficient code. <br>
+            <br>
+        </div>
+        <div class="body-text">
+            &emsp;&emsp;&lt;/li&gt;
+        </div>
+        <div class="body-text">
+            &lt;ul/&gt;
+        </div>
+    </div>
+</div>
+{% endblock main %}

@@ -6,7 +6,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +16,15 @@
     </title>
 </head>
 
-
 <body>
+
     <header>
         <div class="container">
-            <div class="left-side">
+            <div class="header-left-side">
                 {% block user %}{% endblock user %}
             </div>
             <nav>
-                <div class="right-side">
+                <div class="header-right-side">
                     <div><a href="#" class="link-wrapper">hi</a></div>
                     <div><a href="#" class="link-wrapper">hey</a></div>
                     <div><a href="#" class="link-wrapper">abc</a></div>
@@ -35,7 +34,11 @@
             </nav>
         </div>
     </header>
-</body>
 
+    <main>
+        {% block main %}{% endblock main %}
+    </main>
+
+</body>
 
 </html>
