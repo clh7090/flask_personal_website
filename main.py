@@ -5,22 +5,30 @@ Flask Personal Website
 """
 
 
-from flask import Flask, request, redirect, url_for, render_template, session
+from flask import Flask, request, redirect, url_for, render_template, session, flash
 from datetime import timedelta
+from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__)
 app.secret_key = "immasecret"
-app.permanent_session_lifetime = timedelta(days=1)
+app.permanent_session_lifetime = timedelta(minutes=30)
 
 
-@app.route("/home/")
-@app.route("/")
+@app.route("/home/", methods=["POST", "GET"])
+@app.route("/",  methods=["POST", "GET"])
 def home():
+    name = ""
     if "name" in session:
         name = session["name"]
+        if request.method == "POST":
+            name = request.form["nme"]
+            session["name"] = name
+        else:
+            if "name" in session:
+                name = session["name"]
         return render_template("index.html", name=name)
-    return render_template("index.html")
+    return render_template("index.html", name=name)
 
 
 @app.route("/resume/")
@@ -37,28 +45,30 @@ def login():
         session.permanent = True
         name = request.form["nme"]
         session["name"] = name
-        return redirect(url_for("user"))
+        flash("Login successful.", "info")
+        return redirect(url_for("home"))
     else:
         if "name" in session:
-            return redirect(url_for("user"))
+            flash("You are already logged in.", "info")
+            return redirect(url_for("home"))
         return render_template("login.html")
 
 
-@app.route("/user")
-def user():
+@app.route("/logout/")
+def logout():
     if "name" in session:
-        name = session["name"]
+        flash("Logout successful.", "info")
+        session.pop("name", None)
         return redirect(url_for("home"))
     else:
-        return redirect(url_for("login"))
+        flash("You are not logged in.", "info")
+        return redirect(url_for("home"))
 
 
-@app.route("/logout")
-def logout():
-    session.pop("name", None)
-    return redirect(url_for("home"))
+@app.route("/test_db/")
+def test_db():
+    pass
 
 
 if __name__ == "__main__":
     app.run(debug=True)
-
