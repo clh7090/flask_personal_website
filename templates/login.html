@@ -1,0 +1,23 @@
+<!--author: Connor Hunter   <clh7090@rit.edu>-->
+
+<!--Flask Personal Website-->
+
+
+{% extends "template.html" %}
+
+
+{% block title %}Login Page{% endblock title %}
+
+
+{% block user %}Welcome {{name}}{% endblock user %}
+
+
+{% block main %}
+<form class="login-box" action="#" method="post">
+    <h1>LOGIN</h1>
+    <input id="use" type="text" name="nme" placeholder="Username">
+    <input id="pass" type="password" name="pw" placeholder="Password">
+    <input id="log" type="submit" name="" value="Login">
+</form>
+{% endblock main %}
+

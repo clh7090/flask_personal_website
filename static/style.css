@@ -7,6 +7,7 @@ Flask Personal Website
 
 body {
     margin: 0;
+    padding: 0;
     font-family: "Lucida Console", sans-serif;
     overflow-x: hidden;
 }
@@ -28,7 +29,7 @@ header {
 .container > .header-left-side {
     color: black;
     animation-name: color-fade;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 
 
@@ -50,7 +51,7 @@ nav > .header-right-side > .link-hover {
     text-transform: uppercase;
     height: 22px;
     border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
+    transition: border-bottom 0.4s;
 }
 
 
@@ -104,7 +105,7 @@ main > .container {
     color: black;
     font-size: 1rem;
     animation-name: color-fade;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 
 .logos{
@@ -127,7 +128,7 @@ main > .container {
 i {
     color: black;
     animation-name: color-fade;
-    animation-duration: 5s;
+    animation-duration: 4s;
 }
 
 
@@ -144,8 +145,67 @@ i {
     font-size: 1.5rem;
     color: black;
     animation-name: color-fade;
-    animation-duration: 5s;
+    animation-duration: 4s;
     text-decoration: none;
+}
+
+.login-box{
+    position: absolute;
+    width: 30%;
+    max-width: 250px;
+    min-width: 225px;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: #55d6aa;
+    border-radius: 3%;
+}
+
+
+.login-box h1{
+    color: black;
+    animation-name: color-fade;
+    animation-duration: 4s;
+}
+
+
+#use, #pass {
+    background: #55d6aa;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 12px 8px;
+    border: 2px solid black;
+    width: 200px;
+    outline: none;
+    color: black;
+    animation-name: color-fade;
+    animation-duration: 4s;
+    border-radius: 15px;
+}
+
+
+#log {
+    cursor: pointer;  /* no pointer otherwise */
+    background: #55d6aa;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px 40px;
+    outline: none;
+    color: black;
+    animation-name: color-fade;
+    animation-duration: 4s;
+    border-radius: 15px;
+    transition: 0.25s;
+}
+
+
+#log:hover{
+    background: darkgreen;
 }
 
 
