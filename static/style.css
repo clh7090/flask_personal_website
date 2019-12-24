@@ -14,6 +14,8 @@ body {
 
 .container {
     width: 80%;
+    min-width: 850px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -60,12 +62,12 @@ nav > .header-right-side {
 
 
 .link-wrapper:hover {
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid white;
 }
 
 
 .header-right-side a:hover {
-    color: #f1f1f1;
+    color: white;
 }
 
 
@@ -103,6 +105,39 @@ main > .container {
     font-size: 1rem;
     animation-name: color-fade;
     animation-duration: 5s;
+}
+
+.logos{
+    margin:-15px;
+    text-align: center;
+}
+
+
+.button{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    margin: 20px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px #00000070;
+}
+
+
+i {
+    color: black;
+    animation-name: color-fade;
+    animation-duration: 5s;
+}
+
+
+.button i {
+    line-height: 30px;
+}
+
+
+.button:hover i {
+    transform: scale(1.2);
 }
 
 
