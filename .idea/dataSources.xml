@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="users" uuid="c61b7fcc-3e3d-4f16-8ce4-37d8f9c4c610">
+    <data-source source="LOCAL" name="Users" uuid="788440db-57a1-4697-92c8-368b46def7dd">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\git_repos\python\py_flask_personal_website\users.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\git_repos\python\py_flask_personal_website\Users.db</jdbc-url>
     </data-source>
   </component>
 </project>

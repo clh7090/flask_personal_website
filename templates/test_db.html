@@ -3,21 +3,9 @@
 <!--Flask Personal Website-->
 
 
-{% extends "template.html" %}
-
-
-{% block title %}Test Page{% endblock title %}
-
-
-{% block user %}
-Welcome {{name}}
-{% endblock user %}
-
-
-{% block main %}
-    {%for thing in values %}
-        <p></p>
-    {% endfor %}}
-{% endblock main %}
+{%for thing in values %}
+    <p>Name: {{thing.username}}  Pass: {{thing.password}}
+    </p>
+{% endfor %}
 
 
