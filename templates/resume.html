@@ -5,17 +5,9 @@
 
 {% extends "template.html" %}
 
-
 {% block title %}Resume Page{% endblock title %}
 
-
-{% block user %}
-{% if name == None %}
-Welcome
-{% else %}
-Welcome {{name}}
-{% endif %}
-{% endblock user %}
+{% block user %}Welcome {{name}}{% endblock user %}
 
 {% block main %}
 <div class="container">

@@ -29,7 +29,7 @@
                     <div class="link-hover">
                         <div><a href="/" class="link-wrapper">Home</a></div>
                         <div><a href="/resume/" class="link-wrapper">Resumé</a></div>
-                        <div><a href="#" class="link-wrapper">Sticky Notes</a></div>
+                        <div><a href="/notes/" class="link-wrapper">Sticky Notes</a></div>
                         <div><a href="/login/" class="link-wrapper">Login</a></div>
                         <div><a href="/logout/" class="link-wrapper">Logout</a></div>
                     </div>
@@ -37,6 +37,8 @@
             </nav>
         </div>
     </header>
+
+
         <div class="msg">
             {% block message %}
                 {% with messages = get_flashed_messages() %}
@@ -48,10 +50,12 @@
                 {% endwith %}
             {% endblock message %}
         </div>
+
+
     <main>
         {% block main %}{% endblock main %}
     </main>
 
-</body>
 
+</body>
 </html>

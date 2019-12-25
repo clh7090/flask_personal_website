@@ -5,20 +5,15 @@
 
 {% extends "template.html" %}
 
-
 {% block title %}Login Page{% endblock title %}
 
-
-{% block user %}
-Welcome {{name}}
-{% endblock user %}
-
+{% block user %}Welcome {{name}}{% endblock user %}
 
 {% block main %}
 <form class="login-box" action="#" method="post">
     <h1>LOGIN</h1>
-    <input id="use" type="text" name="nme" placeholder="Username">
-    <input id="pass" type="password" name="pw" placeholder="Password">
+    <input id="use" type="text" name="nme" placeholder="Username" maxlength="10">
+    <input id="pass" type="password" name="pw" placeholder="Password" maxlength="10">
     <input id="log" type="submit" name="" value="Login">
     <p>DO NOT put a secure password! They are not hashed.</p>
 </form>

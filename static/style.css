@@ -141,13 +141,6 @@ i {
     transform: scale(1.2);
 }
 
-#resume-link a{
-    font-size: 1.5rem;
-    color: black;
-    animation-name: color-fade;
-    animation-duration: 4s;
-    text-decoration: none;
-}
 
 .login-box{
     position: absolute;
@@ -168,6 +161,15 @@ i {
     color: black;
     animation-name: color-fade;
     animation-duration: 4s;
+}
+
+
+#resume-link a{
+    font-size: 1.5rem;
+    color: black;
+    animation-name: color-fade;
+    animation-duration: 4s;
+    text-decoration: none;
 }
 
 

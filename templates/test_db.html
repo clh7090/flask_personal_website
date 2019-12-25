@@ -1,11 +1,18 @@
 <!--author: Connor Hunter   <clh7090@rit.edu>-->
 
 <!--Flask Personal Website-->
+<!--DEVS ONLY PAGE-->
 
 
-{%for thing in values %}
-    <p>Name: {{thing.username}}  Pass: {{thing.password}}
-    </p>
+<h1>USERS</h1>
+{%for value in users %}
+    <p>id: {{value.id}}&emsp; username: {{value.username}}&emsp; password: {{value.password}}&emsp; notes: {{value.notes}}</p>
 {% endfor %}
+<br><br>
+<br><br>
 
+<h1>NOTES</h1>
+{%for value in notes %}
+    <p>id: {{value.id}}&emsp; text: {{value.notes}}&emsp; owner_id: {{value.owner_id}}</p>
+{% endfor %}
 

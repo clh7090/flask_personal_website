@@ -1,0 +1,26 @@
+<!--author: Connor Hunter   <clh7090@rit.edu>-->
+
+<!--Flask Personal Website-->
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for msg in messages %}
+                <p>{{msg}}</p>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div class="note-forms">
+        <form action="/add/" method="post">
+            <input class="note-button" type="submit" name="add" value="ADD NOTE">
+            <input id="note" type="text" name="nte" placeholder="Type here and then click add note.." maxlength="150">
+        </form>
+        <form action="/del/" method="post">
+            <input class="note-button" type="submit" name="del" value="DELETE NOTE">
+        </form>
+    </div>
+    <div class="notes">
+        {% for value in note_list %}
+        <p>{{value.notes}}</p>
+        {% endfor %}
+    </div>
