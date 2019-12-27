@@ -129,7 +129,7 @@ def add_note():
         name = session["name"]
         existing_user = Users.query.filter_by(username=name).first()
         my_note = existing_user.notes  # list of notes
-        if len(my_note) <= 5:
+        if len(my_note) <= 3:
             text = request.form["nte"]
             new_note = Notes(notes=text, owner=existing_user)
             database.session.add(new_note)  # comitting the note, with the user as whoever is logged in

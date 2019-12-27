@@ -9,7 +9,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Lucida Console", sans-serif;
-    overflow-x: scroll;
 }
 
 
@@ -179,8 +178,8 @@ i {
 
 
 .note-container{
-    padding-top: 105px;
-    padding-left: 10px;
+    padding-top: 150px;
+    padding-left: 20px;
 }
 .note-forms{
     display: flex;
@@ -194,7 +193,7 @@ i {
 }
 
 .notes {
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
     width: 250px;
 }
@@ -216,7 +215,7 @@ i {
     position: absolute;
     width: 250px;
     height: 42px;
-    top: 105px;
+    top: 150px;
     padding-left: 3px;
     margin-left: 50px;
     background: rgba(85, 214, 170, 0.43);
