@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Lucida Console", sans-serif;
-    overflow-x: hidden;
+    overflow-x: scroll;
 }
 
 
@@ -161,6 +161,68 @@ i {
     color: black;
     animation-name: color-fade;
     animation-duration: 4s;
+}
+
+.note-button{
+    cursor: pointer;
+    transition: 0.25s;
+    margin-right: 10px;
+    display: block;
+    outline: none;
+    border: 1px solid black;
+}
+.note-button:hover{
+    transform: scale(1.1);
+    animation-name: color-fade;
+    animation-duration: 4s;
+}
+
+
+.note-container{
+    padding-top: 105px;
+    padding-left: 10px;
+}
+.note-forms{
+    display: flex;
+    background: #55d6aa;
+    text-align: center;
+    padding: 12px 8px;
+    border: 2px solid black;
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.notes {
+    padding-top: 10%;
+    display: flex;
+    width: 250px;
+}
+
+
+.notes p{
+    border: 1px solid #55d6aa;
+    box-shadow: 0 5px 15px #00000070;
+    width: 60%;
+    word-wrap: break-word;
+    background: white;
+    justify-content: space-evenly;
+    padding: 50px;
+    animation-name: color-fade;
+    animation-duration: 4s;
+}
+
+#note{
+    position: absolute;
+    width: 250px;
+    height: 42px;
+    top: 105px;
+    padding-left: 3px;
+    margin-left: 50px;
+    background: rgba(85, 214, 170, 0.43);
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 

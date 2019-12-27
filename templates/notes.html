@@ -2,25 +2,34 @@
 
 <!--Flask Personal Website-->
 
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-            {% for msg in messages %}
-                <p>{{msg}}</p>
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
 
-    <div class="note-forms">
-        <form action="/add/" method="post">
-            <input class="note-button" type="submit" name="add" value="ADD NOTE">
-            <input id="note" type="text" name="nte" placeholder="Type here and then click add note.." maxlength="150">
-        </form>
-        <form action="/del/" method="post">
-            <input class="note-button" type="submit" name="del" value="DELETE NOTE">
-        </form>
+{% extends "template.html" %}
+
+{% block title %}Resume Page{% endblock title %}
+
+{% block user %}Welcome {{name}}{% endblock user %}
+
+{% block main %}
+    <div class="note-container">
+        <div class="note-forms">
+            <form action="/del/" method="post">
+                <input class="note-button" type="submit" name="del" value="DELETE NOTE">
+            </form>
+            <form action="/add/" method="post">
+                <input class="note-button" type="submit" name="add" value="ADD NOTE">
+                <input id="note" type="text" name="nte" placeholder="Type here and then click add note.." maxlength="100">
+            </form>
+        </div>
+        <div class="notes">
+            <div class="empty">
+                &nbsp;&nbsp;
+            </div>
+            {% for value in note_list %}
+            <p>{{value.notes}}</p>
+            <div class="empty">
+                &nbsp;&nbsp;
+            </div>
+            {% endfor %}
+        </div>
     </div>
-    <div class="notes">
-        {% for value in note_list %}
-        <p>{{value.notes}}</p>
-        {% endfor %}
-    </div>
+{% endblock main %}

@@ -46,12 +46,10 @@ class Notes(database.Model):
         self.owner = owner  # refers to the User class
 
 
-# @app.route("/test_db/")
-# def test_db():
-"""
-TEST FILE FOR DEVS: shows all data for each user and each note!
-"""
-#     return render_template("test_db.html", users=Users.query.all(), notes=Notes.query.all())
+@app.route("/test_db/")  # Collects all data on users and their notes
+def test_db():
+    return render_template("test_db.html", users=Users.query.all(), notes=Notes.query.all())
+
 
 
 @app.route("/home/")
@@ -136,9 +134,9 @@ def add_note():
             new_note = Notes(notes=text, owner=existing_user)
             database.session.add(new_note)  # comitting the note, with the user as whoever is logged in
             database.session.commit()
-            return render_template("notes.html", note_list=my_note)
+            return render_template("notes.html", name=name, note_list=my_note)
         flash("You must delete an old note first.", "info")
-        return render_template("notes.html", note_list=my_note)
+        return render_template("notes.html", name=name, note_list=my_note)
 
 
 @app.route("/del/", methods=["POST"])
@@ -149,10 +147,10 @@ def del_note():
         my_note = existing_user.notes
         my_note[:] = my_note[:-1]  # deletes the last note on the pile, the one that was added first
         database.session.commit()
-        return render_template("notes.html", note_list=my_note)
+        return render_template("notes.html", name=name, note_list=my_note)
 
 
 if __name__ == "__main__":
     database.create_all()
-    app.run(debug=True)
+    app.run()
 

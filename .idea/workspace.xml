@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d7b1885f-02d3-4507-844a-74538c477e8d" name="Default Changelist" comment="Cleaned up some code and refined the nav bar.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Users.db" beforeDir="false" afterPath="$PROJECT_DIR$/Users.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/resume.docx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/notes.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/notes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test_db.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test_db.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../py_ebay_web_scraper" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -142,7 +141,14 @@
       <workItem from="1577226434498" duration="316000" />
       <workItem from="1577227769758" duration="320000" />
       <workItem from="1577228114568" duration="15309000" />
-      <workItem from="1577246107263" duration="16657000" />
+      <workItem from="1577246107263" duration="17167000" />
+      <workItem from="1577288691089" duration="11599000" />
+      <workItem from="1577302817912" duration="54000" />
+      <workItem from="1577415454712" duration="4732000" />
+      <workItem from="1577428862609" duration="446000" />
+      <workItem from="1577429329417" duration="121000" />
+      <workItem from="1577429534842" duration="150000" />
+      <workItem from="1577429703746" duration="645000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up some code and refined the nav bar.">
       <created>1577144032306</created>
@@ -183,6 +189,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/py_flask_personal_website$test_6.coverage" NAME="test_6 Coverage Results" MODIFIED="1577221474048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/python_projects/random_test_files" />
-    <SUITE FILE_PATH="coverage/py_flask_personal_website$main.coverage" NAME="main Coverage Results" MODIFIED="1577263537586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/py_flask_personal_website$main.coverage" NAME="main Coverage Results" MODIFIED="1577429708893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
